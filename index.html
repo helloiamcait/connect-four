@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Madimi+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1 onClick="window.location.reload();">Connect 4</h1>
+    <button class="control-buttons" id="start">Start Game</button>
+
+    
+    <div class="container">
+        <div class="grid-container"> 
+            
+        </div>
+        <div class="win-overlay" id="lose">You Lose</div>
+        <div class="win-overlay" id="win">You Win</div>
+        <div class="coin-flip-overlay" id="human"></div>
+        <div class="coin-flip-overlay" id="computer"></div>
+        <button class="restart-overlay control-buttons" id="restart">New Game</button>
+    </div>
+    
+    <div class="score-board">
+        
+        <div class="score-wrapper">
+            <p class="scoreHuman score-button" style="background-color: #1973BC;"></p>
+            <p class="scoreComp score-button" style="background-color: #E7564D;"></p>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="game-medium.js"></script>
+    
+</body>
+</html>

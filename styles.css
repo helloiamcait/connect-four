@@ -1,0 +1,189 @@
+body {
+    /* font-family: "Madimi One", sans-serif; */
+    font-family: sans-serif;
+    text-align: center;
+    /* text-transform: uppercase; */
+    /* !!PAGE BACKGROUND */
+    background-color: #F3E3D8;
+    /* !!PAGE TEXT COLOR */
+    color: #122B30;
+    /* letter-spacing: .2rem; */
+}
+
+button {
+    /* font-family: "Madimi One", sans-serif; */
+    letter-spacing: .2rem;
+}
+
+h1 {
+    font-family: "Lobster", sans-serif;
+    margin-top: 50px;
+    color: #2168A3;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.score-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #93BAB6;
+
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    margin: 0 calc((100vw - 440px)/2);
+    border-radius: 10px;
+    gap: 20px;
+}
+
+#start {
+    margin-top: 1.5rem;
+    width: 20rem;
+    justify-self: center;
+}
+
+.score-board {
+    margin-top: 10px; 
+    width: 100%;
+    display: grid;
+    
+}
+
+.scoreHuman {
+    background-color: #1973BC;
+    border-color: #1973BC;
+}
+
+.scoreComp {
+    background-color: #E7564D;
+    border-color: #E7564D;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "overlaydemo";
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    /* Adjust the size as needed */
+    gap: 5px;
+    /* Adjust the gap between buttons */
+    grid-area: overlaydemo;
+    /* !!GRID COLOR */
+    background-color: #93BAB6;
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+    margin: 0 calc((100vw - 440px)/2);
+    border-radius: 10px;
+}
+
+.win-overlay {
+    font-family: "Lobster", sans-serif;
+    grid-area: overlaydemo;
+    margin: 0 calc((100vw - 440px)/2);
+    margin-top: 3rem;
+    z-index: 3;
+    color: #2B5D6E;
+    font-size: 4rem;
+    font-weight: 800;
+    
+
+}
+
+
+.restart-overlay {
+    grid-area: overlaydemo;
+    z-index: 3;
+    color: #2168A3;
+    margin-top: 10rem;
+    width: 20rem;
+    justify-self: center;
+}
+
+.coin-flip-overlay {
+    grid-area: overlaydemo;
+    margin: 0 calc((100vw - 440px)/2);
+    z-index: 3;
+    padding: 10px;
+    /* !!COIN FLIP TEXT COLOR */
+    color: #2B5D6E;
+    font-size: 3rem;
+    justify-self: center;
+    align-self: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+
+/* Style for the grid buttons */
+.grid-button {
+    width: 100%;
+    height: 50px;
+    /* Adjust the height as needed */
+    text-align: center;
+    
+    /* !!PAGE BACKGROUND */
+    background-color: #F3E3D8;    /* Initial background color */
+    border-radius: 30px;
+    border: 2px solid #F3E3D8;
+}
+
+.score-button {
+    /* Adjust the height as needed */
+    text-align: center;
+    vertical-align: middle;
+    word-spacing: .5rem;
+    border-radius: 30px;
+    border-color: transparent;
+    color: #F3E3D8;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    margin: 0px;
+    font-weight: 500;
+    font-size: medium;
+    letter-spacing: .2rem;
+}
+
+.controls-container {
+    height: 60px;
+    margin: 0 calc((100vw - 440px)/2);
+}
+
+
+.control-buttons {
+    text-align: center;
+    height: 50px;
+    width: 0 calc((100vw - 440px)/2);
+    /* !!CONTROL BUTTON TEXT COLOR */
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 10px;
+    /* !!CONTROL BUTTON COLOR */
+    border: 1px solid #2168A3;
+    background-color: #2168A3;
+    /* background: transparent; */
+    outline: none;
+    font-size: medium;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button {
+    color: transparent;
+}
+
+.overlay {
+    background-color: #2B5D6E;
+    opacity: 10%;
+    z-index: 2;
+}
+
