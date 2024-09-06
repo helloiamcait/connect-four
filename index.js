@@ -37,7 +37,6 @@ $(document).ready(function () {
   $(".score-board").hide();
   $(".grid-container").hide();
 
-  // $(".coinFlip").hide();
   $(".win-overlay").css("display", "none");
   $(".restart-overlay").css("display", "none");
   $(".coin-flip-overlay").css("display", "none");
@@ -148,7 +147,6 @@ $(document).ready(function () {
        $(".scoreHuman").css("border-color", "#1973BC");
        $(".scoreComp").css("border-color", "#F3E3D8");
 
-      // move this to the handleButtonClick function and only make it run if check board returns stopComp false
       console.log(compPlayerTurn1Done);
       if (compPlayerTurn1Done === false && stopComp===false) {
         setTimeout(function () {
@@ -172,7 +170,6 @@ $(document).ready(function () {
           $(".scoreComp").css("border-color", "#E7564D");
         }, 800);
       }
-      // move up to here
     }
 
     console.log("CHECK");
@@ -338,8 +335,8 @@ $(document).ready(function () {
     checkNextStartPosition();
   }
 
-  // checks to see which direction requires the fewest moves to win
-  // if the number of moves are equal, it prioritizes TRBL > TLBR and the direction already being worked on
+  // check to see which direction requires the fewest moves to win
+  // if the number of moves are equal, prioritize TRBL > TLBR and the direction already being worked on
   function checkNextStartPosition() {
     countMovesToWinTRBL();
     countMovesToWinTLBR();
